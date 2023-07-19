@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en" class="dark" >
+    <!-- remove class="dark" if u want light mode -->
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+ 
+</head>
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+<header class="bg-teal-700 text-white sticky top-0 z-10">
+    <section class=" mx-auto py-4 flex justify-between items-center">
+        <h1 class="text-3xl font-medium " ><a href="#hero">🍁Prish</a></h1>
+       
+        <div>
+            <button id="mobile-open-button" class="text-3xl md:hidden  focus:outline-none"nclick="myFunction()">&#9776;</button>
+            
+            <nav class="hidden md:block space-x-8 text-xl px-5" aria-label="main">
+                
+                <a href="#home" class="hover:opacity-90">Home</a>
+                <a href="#quotes" class="hover:opacity-90">Quotes</a>
+                <a href="#Contact" class="hover:opacity-90">Contact Us</a>
+                
+            </nav>
+        </div>
+    
+        
+        
+    </section>
+    <!-- ------------------------------------------ -->
+    <!-- <div id="myLinks" class="overflow-hidden bg-black relative md:hidden">
+        <nav class="hidden md:flex flex-col gap-2"aria-label="footer">
+            <a href="#home" class="hover:bg-slate-200 text-black">Home</a>
+            <a href="#quotes" class="hover:bg-slate-200 text-black">Quotes</a>
+            <a href="#Contact" class="hover:bg-slate-200 text-black">Contact</a>
+        </nav> -->
+        <!-- <nav class="nav">
+            <ul class="menu">
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Blog</a> </li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div> --> 
+    <!-- --------------------------------------- -->
+</header>
+<main class="max-w-4xl mx-auto">
+<section id="home" class=" scroll-mt-40 flex flex-col-reverse justify-center md:flex-row p-6 items-center gap-8 mb-12">
+<article class="md:w-1/2">
+<h2 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left text-slate-900 dark:text-white">The purpose of our lives is to be happy.</h2>
+<p class="max-w-md text-2xl mt-4 text-center md:text-left text-slate-700 dark:text-slate-400">The Dalai Lama once said, “The purpose of life is to be happy.”
+    According to him, people are born with an inherent sense of kindness and warmheartedness toward others. If the ultimate goal in life is to find happiness, being kind and good to others should help us achieve that.</p>
+<p class="max-w-md text-2xl mt-4 text-center md:text-left text-slate-700 dark:text-slate-400">Think 🍁Prish</p>
+</article>
+<img class="w-1/2 " src="/meditte.png " alt="happy">
+</section>
+<hr class="w-1/2 mx-auto bg-black dark:bg-white">
+
+
+<section id="quotes" class="p-6 my-12 scroll-mt-20">
+    <h2 class="text-4xl font-bold text-center md:text-5xl mb-6 text-slate-900 dark:text-white">Our Quotes</h2>
+    <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8 ">
+        <li class=" w-2/3 h-40 md:h-32 md:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white  py-2 px-2 rounded-3xl shadow-xl hover:bg-red-50">
+            <p class="max-w-md text-2xl mt-4 text-center md:text-left text-slate-700 dark:text-slate-400 italic">You only live once, but if you do it right, once is enough.</p>
+        </li>
+        <li class=" w-2/3 h-40 md:h-32 md:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white py-2 px-2 rounded-3xl shadow-xl hover:bg-red-50">
+            <p class="max-w-md text-2xl mt-4 text-center md:text-left text-slate-700 dark:text-slate-400 italic">Never let the fear of striking out keep you from playing the game.</p>
+        </li>
+        <li class=" w-2/3 h-40 md:h-32 md:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white py-2 px-2 rounded-3xl shadow-xl hover:bg-red-50">
+            <p class="max-w-md text-2xl mt-4 text-center md:text-left text-slate-700 dark:text-slate-400 italic" >Man is made by his belief. As he believes, so he is</p>
+        </li>
+        
+        
+    </ul>
+</section>
+<hr class="w-1/2 mx-auto bg-black dark:bg-white">
+
+<section id="Contact" class="p-6 my-12 scroll-mt-20 ">
+    <h2 class="text-4xl font-bold text-center md:text-5xl mb-6 text-slate-900 dark:text-white">Contact us</h2>
+    <form action="" class="max-w-4xl mx-auto text-2xl md:text-3xl flex flex-col items-left gap-4 ">
+        <!-- <label for="subject">Message:</label> -->
+        <input type="text" id="subject"name="subject" required minlength="3" maxlength="20" placeholder="Name:" class="w-full text-black text-xl md:text-2xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"/>
+        <input type="text" id="subject"name="subject" required minlength="3" maxlength="60" placeholder="Message:" class="w-full text-black text-xl md:text-2xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"/>
+    <button onclick="alert('Your message has been sent.Thank You😃')"  class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3  w-26 md:w-48 rounded-xl border border-solid border-slate-900 dark:border-nones ">Submit</button>
+    </form>
+</section>
+
+</main>
+<footer id="footer"class="bg-teal-700 text-white text-xl">
+<section class="max-w-4xl mx-auto p-4 flex flex-col md:flex-row md:justify-between">
+<address class="text-left"> 
+    <h2>
+        🍁PRISH</h2>7th Floor,Katlerigudda Bejai<br> Kapikad, Mangaluru, Karnataka 575003<br>
+        Email :<a href="mailto:inquiries@prish.com"> Inquiries@Prish.Com</a><br>
+        Phone :<a href="tel:0824-2211678"> 0824-2211678</a><br>
+    
+</address>
+<nav class="hidden md:flex flex-col gap-2"aria-label="footer">
+    <a href="#home" class="hover:opacity-90">Home</a>
+    <a href="#quotes" class="hover:opacity-90">Quotes</a>
+    <a href="#Contact" class="hover:opacity-90">Contact</a>
+</nav>
+<div class=" hidden md:flex flex-col gap-2">
+    <p class="text-right">Copyright &copy; <span id="year">2022</span></p>
+    <p class="text-right">All Rights Reserved</p>
+   
+</div>
+</section>
+</footer>
+</body>
+</html>
